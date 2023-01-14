@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Classification</title>
+</head>
+<body>
+    <p> Hello All</p>
+    <form action="{{ url_for('predict')}}" method="POST">
+        Area_worst:  <input type="number" name="area_worst"></br>
+        Perimeter_worst:   <input type="number" name="perimeter_worst"></br>
+	Perimeter_mean:  <input type="number" name="perimeter_mean"></br>
+	Radius_worst:   <input type="number" name="radius_worst"></br>
+      
+        <input type=submit value=Submit>
+   </form>
+    My prediction: {{ predict }}
+</body>
+</html>
